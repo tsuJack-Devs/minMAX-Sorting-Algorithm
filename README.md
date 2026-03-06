@@ -48,12 +48,16 @@ Why minMAX Shines
 - Predictable performance: consistently ~0.25 × n<sup>2</sup> comparisons.
 - In-place and mostly stable: doesn’t require extra memory.
 
-Usage
+Usage Snippet
 -----
-To use minMAXSort in Java:
+import JEnghog.BlackBeans.Utility.minMAX;
 
-int[] arr = {42, 13, 7, 389, 23, 167};
-minMAXSort(arr, arr.length);
+public class Main {
+    public static void main(String[] args) {
+        int[] x = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+        minMAX.sort(x);
+    }
+}
 // arr is now sorted
 
 License

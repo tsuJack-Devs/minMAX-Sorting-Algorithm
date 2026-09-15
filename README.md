@@ -60,15 +60,7 @@ public class Main {
 }
 // arr is now sorted
 
-License
+GPL 3.0 License
 -----
 BlackBeans minMAX Sort 1.12j Stable
-                        
-Copyright (c) 2025 Jod Enghog
-All Rights Reserved.
-
-This software is proprietary. You may use it only under the terms
-of the license agreement. Redistribution, modification, or public use
-without explicit permission is prohibited.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+— Jod Enghog

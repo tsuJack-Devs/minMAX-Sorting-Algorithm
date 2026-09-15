@@ -10,12 +10,15 @@ Method & Pseudocode
 ------------------------------
 The minMAX algorithm was inspired by parallel processing. It compares the minimum and maximum integers simultaneously in the unsorted portion of an array, reducing the number of steps required to sort an array of n elements.
 
+```text
 loop i from 0 to n/2:
-    loop j from i to n - i:
+    loop j from i to n - i - 1:
         find min integer position
         find max integer position
-    swap min to array(i)
-    swap max to array(n - i)
+    Cache boundary values simultaneously (prevents index collision)
+    Swap min to array(i)
+    Swap max to array(n - i - 1)
+```
 
 
 Analysis
@@ -50,6 +53,7 @@ Why minMAX Shines
 
 Usage Snippet
 -----
+```java
 import JEnghog.BlackBeans.Utility.minMAX;
 
 public class Main {
@@ -58,9 +62,11 @@ public class Main {
         minMAX.sort(x);
     }
 }
-// arr is now sorted
+// Array x is now perfectly sorted in-place.
+```
 
 GPL 3.0 License
 -----
-BlackBeans minMAX Sort 1.12j Stable
-— Jod Enghog
+BlackBeans minMAX Sort 1.12j Stable  
+Copyright (C) 2026 Jod Enghog  
+Licensed under the GNU General Public License v3.0.
